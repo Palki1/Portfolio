@@ -13,30 +13,29 @@ const Certificates = () => {
       date: "Aug’ 25", 
       link: "https://drive.google.com/file/d/1Xazta9Qopar7PJMq30ckohQv772YH4se/view?usp=drive_link",
       img: cert1
+    },{ 
+      name: "Introduction To Hardware and Operating Systems  | Coursera", 
+      date: "Feb’ 25", 
+      link: "https://drive.google.com/file/d/17STSUToeeVPrh3UtOQDcWS_Zcu1ws3AR/view?usp=drive_link",
+      img: cert5
     },
+    
     { 
+      name: "Object Oriented Programming  | Iamneo", 
+      date: "Dec’ 24", 
+      link: "https://drive.google.com/file/d/1dSbzK72pX8mKU5PUbO6TT53ERdvbirlz/view?usp=drive_link",
+      img: cert3
+    },{ 
       name: "Mastering in C: Basics To Beyond  | CSE Pathshala", 
       date: "Mar’ 24", 
       link: "https://drive.google.com/file/d/1sg2xxAszfp9BuFkISeLUdRViYGgWPbGS/view?usp=drive_link",
       img: cert2
     },
     { 
-      name: "Object Oriented Programming  | Iamneo", 
-      date: "Dec’ 24", 
-      link: "https://drive.google.com/file/d/1dSbzK72pX8mKU5PUbO6TT53ERdvbirlz/view?usp=drive_link",
-      img: cert3
-    },
-    { 
       name: "Introduction to Python  | Infosys Springboard", 
       date: "Jan’ 24", 
       link: "https://drive.google.com/file/d/173h2OL1xB1tMRC2tv-WJU7C0ECWLVsge/view?usp=drive_link",
       img: cert4
-    },
-    { 
-      name: "Introduction To Hardware and Operating Systems  | Coursera", 
-      date: "Feb’ 25", 
-      link: "https://drive.google.com/file/d/17STSUToeeVPrh3UtOQDcWS_Zcu1ws3AR/view?usp=drive_link",
-      img: cert5
     },
     { 
       name: "Responsive Web Design  | Free CodeCamp", 

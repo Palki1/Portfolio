@@ -1,3 +1,4 @@
+# 👩‍💻 Palki's Portfolio
 For a **good developer portfolio**, you should show things that prove your **skills, learning, and real work**. Since you are learning **web development, PHP, JavaScript, and data analytics**, include these sections.
 
 ---

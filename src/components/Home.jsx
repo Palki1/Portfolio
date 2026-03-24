@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, animate } from "framer-motion";
 import { FaReact, FaNodeJs, FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiFigma } from "react-icons/si";
-import me from "../assets/palki1.jpeg";
+import me from "../assets/pic copy.jpeg";
 import data from "../assets/data.json";
 import "../styles/home.scss";
 

@@ -1,0 +1,90 @@
+#contact {
+  padding: 4rem $p;
+  background-color: $color1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > form {
+      background-color: $color4;
+      padding: 3rem;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+      > h2 {
+        font: 900 2.5rem $text1;
+        color: $color3;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 1rem;
+      }
+
+      > input,
+      > textarea {
+        padding: 1rem;
+        border: 1px solid $color6_2;
+        border-radius: 8px;
+        background-color: transparent;
+        color: $color5;
+        font: 400 1rem $text2;
+        transition: border-color 0.3s;
+
+        &:focus {
+          outline: none;
+          border-color: $color3;
+        }
+
+        &::placeholder {
+          color: $color6;
+        }
+      }
+
+      > button,
+      .resume-btn {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 8px;
+        background-color: $color3;
+        color: $color1;
+        font: 600 1.1rem $text1;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        &:hover {
+          background-color: $color3_1;
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+        }
+      }
+
+      .resume-btn {
+        background-color: $color2;
+        margin-top: -0.5rem;
+
+        &:hover {
+          background-color: darken($color2, 10%);
+        }
+      }
+    }
+  }
+
+  aside {
+    display: none; // Hide extra graphics for professional look
+  }
+}

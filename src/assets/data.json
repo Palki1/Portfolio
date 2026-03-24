@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "title": "Startups Ecosystem Tracker",
+      "date": "Feb’ 25 – May’ 25",
+      "description": "Startups Ecosystem Tracker is website where we can see total number of startups in all over the world , and what are the tops startups in country with there funding ranking status",
+      "github": "https://github.com/Palki1/Startups-Ecosystem-Tracker-"
+    },
+    {
+      "title": "Weather App ",
+      "date": "June’ 25 – July’ 25",
+      "description": "A responsive weather application developed using React that provides real-time weather updates and a 7-day forecast for any location. The app fetches live data from a weather API and displays key information such as temperature, humidity, and weather conditions through an interactive and user-friendly interface.",
+      "github": "https://github.com/Palki1/weather"
+    },
+    {
+      "title": "Secure File Management",
+      "date": "Jan’ 25 – May’ 25",
+      "description": "A secure file management system designed to allow users to upload, store, and manage files with proper authentication and data protection. The system ensures confidentiality and integrity of files through secure access control and encryption mechanisms",
+      "github": "https://github.com/Palki1/secure-file-management"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+#training {
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .training-card {
+    background-color: $color4;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    border: 1px solid $color6_2;
+
+    .train-header {
+      border-bottom: 2px solid $color3;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+
+      h3 {
+        font: 700 2rem $text1;
+        color: $color3;
+        margin-bottom: 0.5rem;
+      }
+      .institution {
+        font: 600 1.2rem $text1;
+        color: $color5;
+      }
+      .date {
+        font: 400 1rem $text2;
+        color: $color6;
+      }
+    }
+
+    .train-desc {
+      list-style-type: none;
+      li {
+        font: 400 1.1rem $text2;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-left: 2rem;
+        color: $color5;
+
+        &::before {
+          content: "▹";
+          position: absolute;
+          left: 0;
+          color: $color3;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .view-btn {
+      padding: 1rem 2.5rem;
+      background-color: $color3;
+      color: $color1;
+      text-decoration: none;
+      border-radius: 5px;
+      font: 700 1.1rem $text1;
+      text-align: center;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      &:hover {
+        background-color: $color3_1;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(100, 255, 218, 0.2);
+      }
+    }
+  }
+}

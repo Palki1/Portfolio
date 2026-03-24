@@ -2,8 +2,12 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
+
+  /* 🔥 Animated Gradient Background */
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #020617, #1e3a8a);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
 
   > section {
     width: 50%;
@@ -28,8 +32,9 @@
 
         .tagline {
           margin: 1rem 0;
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           color: #94a3b8;
+          min-height: 30px; /* prevents jump in typing */
         }
 
         .role-logos {
@@ -43,8 +48,9 @@
             transition: 0.3s;
 
             &:hover {
-              transform: scale(1.2) rotate(5deg);
+              transform: scale(1.3) rotate(10deg);
               color: white;
+              filter: drop-shadow(0 0 10px #64ffda);
             }
           }
         }
@@ -59,17 +65,17 @@
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            transition: 0.3s;
+            transition: all 0.3s ease;
+
+            &:hover {
+              transform: translateY(-5px) scale(1.05);
+              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            }
           }
 
           .primary {
-            background: #64ffda;
+            background: linear-gradient(45deg, #64ffda, #22d3ee);
             color: black;
-
-            &:hover {
-              transform: translateY(-3px);
-              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            }
           }
 
           .secondary {
@@ -96,7 +102,8 @@
             transition: 0.3s;
 
             &:hover {
-              transform: translateY(-5px);
+              transform: translateY(-8px) scale(1.05);
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
             }
 
             p {
@@ -123,8 +130,9 @@
             transition: 0.3s;
 
             &:hover {
-              transform: scale(1.3);
+              transform: scale(1.4) rotate(8deg);
               color: #64ffda;
+              filter: drop-shadow(0 0 8px #64ffda);
             }
           }
         }
@@ -132,33 +140,53 @@
     }
 
     &:last-of-type {
-      img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > img {
         width: 300px;
         height: 300px;
         object-fit: cover;
-        border-radius: 20px;
-        border: 4px solid #64ffda;
-        box-shadow: 0 0 40px rgba(100, 255, 218, 0.3);
+        border-radius: 50%;
+        border: 6px solid rgba(100, 255, 218, 0.15);
+        padding: 6px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+
+        /* 🔥 Floating Animation */
         animation: float 4s ease-in-out infinite;
       }
     }
   }
 }
 
-/* Floating animation */
+/* 🔥 Gradient Animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 🔥 Floating Image */
 @keyframes float {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-18px);
   }
   100% {
     transform: translateY(0);
   }
 }
 
-/* Responsive */
+/* 📱 Responsive */
 @media (max-width: 768px) {
   #home {
     flex-direction: column;

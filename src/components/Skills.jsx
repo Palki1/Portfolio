@@ -1,6 +1,7 @@
 import React from 'react';
 import { SiCplusplus, SiJavascript, SiHtml5, SiCss3, SiPython, SiReact, SiTailwindcss, SiMysql, SiMongodb, SiGit, SiVisualstudiocode, SiHackerrank, SiNodedotjs } from 'react-icons/si';
 import { FaTools, FaUserAlt, FaRegCircle } from 'react-icons/fa';
+import AnimatedSection from './AnimatedSection';
 
 const Skills = () => {
   const skills = {
@@ -12,7 +13,6 @@ const Skills = () => {
     'Soft Skills': ['Continuous Learning', 'Consistency', 'Adaptability', 'Problem-Solving Skills', 'Team Player'],
   };
 
-  // Normalize keys to map common labels to icons
   const iconMap = {
     'c++': SiCplusplus,
     java: FaRegCircle, // no specific Java icon included here, fallback used
@@ -64,21 +64,23 @@ const Skills = () => {
     <div id="skills">
       <h2>Skills</h2>
       <section>
-        {Object.entries(skills).map(([category, skillsList]) => (
-          <div key={category} className="skill-category">
-            <h3>{category}</h3>
-            <ul>
-              {skillsList.map((skill) => {
-                const Icon = getIconFor(skill);
-                return (
-                  <li key={skill} className="skill-item">
-                    <Icon className="skill-icon" style={{ marginRight: 8 }} />
-                    <span>{skill}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+        {Object.entries(skills).map(([category, skillsList], idx) => (
+          <AnimatedSection key={category} delay={idx * 0.05}>
+            <div className="skill-category">
+              <h3>{category}</h3>
+              <ul>
+                {skillsList.map((skill) => {
+                  const Icon = getIconFor(skill);
+                  return (
+                    <li key={skill} className="skill-item">
+                      <Icon className="skill-icon" style={{ marginRight: 8 }} />
+                      <span>{skill}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </AnimatedSection>
         ))}
       </section>
     </div>

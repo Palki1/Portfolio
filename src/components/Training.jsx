@@ -1,4 +1,5 @@
 import React from 'react';
+import AnimatedSection from './AnimatedSection';
 
 const Training = () => {
   const training = [
@@ -46,7 +47,7 @@ const Training = () => {
       >
         <div className="column" style={{ flex: 1, minWidth: 300 }}>
           {training.map((train, index) => (
-            <div key={index} className="training-card">
+            <AnimatedSection key={index} className="training-card" delay={index * 0.05}>
               <div className="train-header">
                 <h3>{train.title}</h3>
                 <p className="institution">{train.institution}</p>
@@ -66,13 +67,13 @@ const Training = () => {
               >
                 View Training Certificate
               </a>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
 
         <div className="column" style={{ flex: 1, minWidth: 300 }}>
           {internships.map((intern, index) => (
-            <div key={index} className="training-card internship-card">
+            <AnimatedSection key={index} className="training-card internship-card" delay={index * 0.05}>
               <div className="train-header">
                 <h3>{intern.title}</h3>
                 <p className="institution">{intern.company}</p>
@@ -92,7 +93,7 @@ const Training = () => {
               >
                 View Internship Certificate / Details
               </a>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </section>
